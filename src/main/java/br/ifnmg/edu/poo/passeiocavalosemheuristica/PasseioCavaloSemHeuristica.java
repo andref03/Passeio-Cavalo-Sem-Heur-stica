@@ -69,6 +69,8 @@ public class PasseioCavaloSemHeuristica {
         
         System.out.println();
         System.out.println(">> O cavalo realizou " + qtddMovimentos + " movimentos.");
+        System.out.println();
+        System.out.println("*Obs.: casas NAO visitadas = {0}");
 
     }
 }
