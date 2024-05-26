@@ -49,6 +49,8 @@ public class PasseioCavaloSemHeuristica {
     }
     
     private static void imprimeTabuleiro(int[][] tabuleiro) {
+        System.out.println("> Tabuleiro:");
+        System.out.println();
         for (int[] linha : tabuleiro) {
             for (int elemento : linha) {
                 System.out.printf("%2d ", elemento);
