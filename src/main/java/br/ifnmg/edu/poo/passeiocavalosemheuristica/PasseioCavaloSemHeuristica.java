@@ -21,7 +21,7 @@ public class PasseioCavaloSemHeuristica {
         
         boolean quadradoValido = true; // booleano p/ impedir laço while infinito
         
-        int contador = 1;
+        int contador = 0;
         
         tabuleiro[linhaAtual][colunaAtual] = 1;
         
