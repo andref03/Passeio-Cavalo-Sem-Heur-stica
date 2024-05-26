@@ -23,7 +23,7 @@ public class PasseioCavaloSemHeuristica {
         
         int contador = 0;
         
-        tabuleiro[linhaAtual][colunaAtual] = 1;
+        tabuleiro[linhaAtual][colunaAtual] = 0;
         
         while (contador <= 64 && quadradoValido) {
             int proxLinha;
