@@ -14,15 +14,14 @@ public class PasseioCavaloSemHeuristica {
         }
     }
     
-    private static int realizaPasseio(int[][] tabuleiro) {
+    private static int realizaPasseio(int linhaAtual, int colunaAtual, int[][] tabuleiro) {
         
         int[] horizontal = {2, 1, -1, -2, -2, -1, 1, 2};
         int[] vertical = {-1, -2, -2, -1, 1, 2, 2, 1};
-        boolean quadradoValido = true;
-        int contador = 1;
         
-        int linhaAtual = 0;
-        int colunaAtual = 0;
+        boolean quadradoValido = true; // booleano p/ impedir laço while infinito
+        
+        int contador = 1;
         
         tabuleiro[linhaAtual][colunaAtual] = 1;
         
@@ -41,7 +40,7 @@ public class PasseioCavaloSemHeuristica {
                     contador++;
                     tabuleiro[linhaAtual][colunaAtual] = contador;
                     quadradoValido = true;
-                    break; // próxima posição
+                    break; // volta pro while(), p/ avançar a próx. posição
                 }
             }
         }
@@ -64,7 +63,7 @@ public class PasseioCavaloSemHeuristica {
 
         inicializaTabuleiro(tabuleiro);
         
-        int qtddMovimentos = realizaPasseio(tabuleiro);
+        int qtddMovimentos = realizaPasseio(0, 0, tabuleiro); // começa na posição tabuleiro[0][0]
         
         imprimeTabuleiro(tabuleiro);
         
