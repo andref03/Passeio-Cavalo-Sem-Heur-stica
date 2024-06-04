@@ -1,11 +1,20 @@
 package br.ifnmg.edu.poo.passeiocavalosemheuristica;
 
 /**
+ * Esta classe contém os métodos necessários para realizar o Passeio do Cavalo
+ * que é realizado sem a heurística (senso comum). Contém o método estático
+ * main.
  *
  * @author André (@andref03)
  */
 public class PasseioCavaloSemHeuristica {
 
+    /**
+     * Este método inicializa todas as posições do tabuleiro 8x8 com o valor
+     * zero.
+     *
+     * @param tabuleiro: int[][]
+     */
     private static void inicializaTabuleiro(int[][] tabuleiro) {
         for (int[] linha : tabuleiro) {
             for (int elemento : linha) {
@@ -14,6 +23,17 @@ public class PasseioCavaloSemHeuristica {
         }
     }
 
+    /**
+     * Este método realiza o Passeio do Cavalo, movimentando o "cavalo" entre as
+     * posições especificadas por pares de linha e coluna. É verificado se a
+     * posição é válida p/ o movimento. A cada movimento, o contador é
+     * incrementado.
+     *
+     * @param linhaAtual: int
+     * @param colunaAtual: int
+     * @param tabuleiro: int[][]
+     * @return contador, que é a quantidade de movimentos.
+     */
     private static int realizaPasseio(int linhaAtual, int colunaAtual, int[][] tabuleiro) {
 
         int[] horizontal = {2, 1, -1, -2, -2, -1, 1, 2};
@@ -48,6 +68,11 @@ public class PasseioCavaloSemHeuristica {
         return contador;
     }
 
+    /**
+     * Este método mostra a situação do tabuleiro a cada chamada deste método.
+     *
+     * @param tabuleiro : int[][]
+     */
     private static void imprimeTabuleiro(int[][] tabuleiro) {
         System.out.println("> Tabuleiro:");
         System.out.println();
@@ -59,6 +84,11 @@ public class PasseioCavaloSemHeuristica {
         }
     }
 
+    /**
+     * Método main, que organiza a ordem de execução do programa.
+     *
+     * @param args : String[]
+     */
     public static void main(String[] args) {
 
         int[][] tabuleiro = new int[8][8];
