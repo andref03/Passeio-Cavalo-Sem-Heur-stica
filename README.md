@@ -1,6 +1,8 @@
-# O que é o "Passeio do Cavalo"?
+# O que é o "Passeio do Cavalo" sem heurística?
 Um problema interessante para os fãs de xadrez é o problema do Passeio do Cavalo, originalmente proposto pelo matemático Euler. 
 A peça do cavalo pode mover-se em um tabuleiro vazio e tocar cada um dos 64 quadrados somente uma única vez?
+
+Quanto à heurística, temos por isso o famoso senso comum. Com a ausência dessa heurística, o "cavalo" poderia se mover para qualquer posição possível, sem se preocupar com a dificuldade de acessar tais posições.
 
 # Requisitos
 O cavalo só faz movimentos em forma de L (dois espaços em uma direção e um outro em uma direção perpendicular).
