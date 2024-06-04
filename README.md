@@ -28,13 +28,13 @@ Os oito movimentos podem ser descritos por dois arrays unidimensionais, horizont
 
 ```horizontal[3] = -2  vertical[3] = -1```
 
-```horizontal[4] = -2  vertical[4] = 1```
+```horizontal[4] = -2  vertical[4] =  1```
 
-```horizontal[5] = -1  vertical[5] = 2```
+```horizontal[5] = -1  vertical[5] =  2```
 
-```horizontal[6] =  1  vertical[6] = 2```
+```horizontal[6] =  1  vertical[6] =  2```
 
-```horizontal[7] =  2  vertical[7] = 1```
+```horizontal[7] =  2  vertical[7] =  1```
 
 # Objetivo 
 
